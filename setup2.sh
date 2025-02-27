@@ -14,10 +14,9 @@ rm go$GO_VERSION.linux-amd64.tar.gz
 echo 'export PATH=$PATH:/usr/local/go/bin' >> ~/.bashrc
 source ~/.bashrc
 
-# Kiểm tra phiên bản Go
-go version
+go version  # Kiểm tra phiên bản Go
 
-# Clone repository và build Initia
+# Clone repository chính thức của Initia
 git clone https://github.com/Initia/initia.git
 cd initia
 make install
